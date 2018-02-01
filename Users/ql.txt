@@ -1,0 +1,1 @@
+SELECT * FROM `revs_data` WHERE `revs_data`.`rev_mess` LIKE '%trac%' OR`revs_data`.`date` LIKE '%trac%' OR `revs_data`.`rev_sub` LIKE '%trac%' OR`revs_data`.`rev_id` LIKE '%trac%'OR`revs_data`.`m_name` LIKE '%trac%' AND`author` ="26"

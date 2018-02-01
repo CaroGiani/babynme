@@ -1,0 +1,64 @@
+<?php 
+
+include('connection.php')?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>DECREMENTA SYSTEM</title>
+<link  type="text/css" rel="stylesheet" href="vision.css"    />
+<link  type="text/css" rel="stylesheet" href="school.css"    />
+<link  type="text/css" rel="stylesheet" href="css/school_style.css"    />
+
+
+</head>
+
+<body>
+
+<div class="content">
+<script language="javascript">
+function Visionprintreceipt()
+{ 
+  var disp_setting="toolbar=yes,location=no,directories=yes,menubar=yes,"; 
+      disp_setting+="scrollbars=yes,width=700, height=400, left=100, top=25"; 
+  var content_vlue = document.getElementById("print_content").innerHTML; 
+  
+  var docprint=window.open("","",disp_setting); 
+   docprint.document.open(); 
+   docprint.document.write('<html><head><title>DECREMENTA SYSTEM REPORT</title>'); 
+   docprint.document.write('</head><body onLoad="self.print()" style="width:800px; font-size:12px; font-family:arial Narrow;text-shadow:0 1px 1px rgba(0,0,0,.1); border: 1px solid black;">');          
+   docprint.document.write(content_vlue);          
+   docprint.document.write('</body></html>'); 
+   docprint.document.close(); 
+   docprint.focus(); 
+}
+</script>
+
+<a href="javascript:Visionprintreceipt()">Print</a>
+<div id="print_content" style="width: 1000px;">
+LIST OF ALL DRIVERS<br><br>
+<?php
+$sel=mysql_query("SELECT * FROM driver");
+echo '<table id="mytable">';
+echo '<th>DL number</th><th>Name</th><th>Gender</th><th>Phone</th><th>Address</th><th>City</th><th>Current Survival Points</th>';
+
+while($fetch=mysql_fetch_array($sel)){
+
+
+echo '<tr><td>'.$fetch['dl'].'</td><td>'.$fetch['name'].'</td><td>'.$fetch['gender'].'</td><td>'.$fetch['phone'].'</td><td>'.$fetch['address'].'</td><td>'.$fetch['city'].'</td><td>'.$fetch['cpoints'].'</td></tr>';
+ 
+}
+echo '</table>';
+?>
+</div>
+
+</div>
+<hr width='600px'>
+  <p><center>
+    </p>
+</div>
+</body>
+</html>
+
+
+	Virus-free. www.avast.com

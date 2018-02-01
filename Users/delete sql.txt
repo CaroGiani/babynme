@@ -1,0 +1,1 @@
+select user_id,user_type, datediff(dob,curdate())AS age from sign_up WHERE 	email<>"" ORDER BY user_id ASC 

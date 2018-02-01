@@ -1,0 +1,130 @@
+body{
+    padding-top: 200px;
+    font-family:COMIC SANS MS; 
+    font-size: 17px;
+}
+#Logo{
+    width: 15%;
+    height: 10%;
+	padding: 10px;
+	
+}
+#nav-1{
+    height:auto;
+    background-image: url("Assets/Images/nav-bar-img.jpg");
+    
+}
+.header-wrapper{
+    align-items: center;
+ 
+
+}
+#menu {
+
+}
+#menu a{
+    color: #ff0080;
+    padding: 14px 16px;
+	padding-right:14px;
+    font-size: 17px;
+    font-family:COMIC SANS MS; 
+  
+}
+#menu a:hover{
+    background:black;
+    font-weight:bolder;
+}
+#menu l1 a:hover{
+   
+}
+#menu li a:active{
+    background:black;
+}
+#side-menu a{
+	text-align:left;
+	text-decoration:none;
+    
+	color:#ff0080;
+	font-size:17px;
+	font-family:COMIC SANS MS; 
+	background-color:black;	
+    padding: 16px 16px;
+	display: block;
+	width: auto;
+}
+#side-menu li{
+    list-style: none;
+}
+
+#side-menu a:hover{
+	background:white;
+	font-weight:bolder;
+	
+}
+#side-menu li a:active{
+	background-color:#4CAF50;
+	color:white;
+	
+}
+.main-wrapper{
+    padding-top: 70px;
+    height:auto;
+    align-content: center;
+    background-size:100% 100%;
+}   
+
+#land-img img{
+    height:200px;
+    width:200px;
+}
+.affix {
+      height: auto;
+      /*width: 100%;*/
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+.table{
+    height: auto;
+}
+button {
+     
+}
+
+#reg{
+    align-items:  center;
+}
+footer{
+text-align: center;
+background-color: #f8f8f8;
+font-size: 14px;
+line-height: 100%;
+}
+
+#index img{
+float:right;
+width:100%;
+height:80%;
+
+}
+p{
+    font-size: 17px;
+    font-family:  COMIC SANS MS;
+}
+#index-info{
+    font-size: 20px;
+    font-family: COMIC SANS MS;
+    text-align: center;
+}
+
+
+#index-info{
+    align-content: center;
+    align-self: center;
+}
+form #due_date{
+	color:#ff0080;
+	font-size: 17px;
+}
+ 

@@ -1,0 +1,1 @@
+select user_id,user_type,date_created,datediff(curdate(),dob)AS age from sign_up WHERE dob BETWEEN "#2018-11-18#" AND "#2005-11-18#" ORDER BY `date_created` DESC
